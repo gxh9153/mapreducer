@@ -11,7 +11,6 @@ import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
-import java.io.File;
 import java.io.IOException;
 
 //自定义RecordReader 处理一个文件，将这个文件直接读成kv值
