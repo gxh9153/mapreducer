@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a6882a-eca6-442b-bce9-1cacb5094418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/OrderBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="330">
+              <caret line="15" column="50" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="15" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#210#211#0" expanded="true" />
@@ -92,11 +89,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="315">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#393#408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,6 +197,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/OrderBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJDriver.java" />
       </list>
     </option>
   </component>
@@ -203,7 +228,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="3" />
     <option name="width" value="1303" />
@@ -267,7 +292,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gxh" type="462c0819:PsiDirectoryNode" />
-              <item name="groupingcomparator" type="462c0819:PsiDirectoryNode" />
+              <item name="mapjoin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mapreduce" type="b2602c69:ProjectViewProjectNode" />
@@ -313,7 +338,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RJDriver">
+  <component name="RunManager" selected="Application.MJDriver">
+    <configuration name="MJDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gxh.mapjoin.MJDriver" />
+      <module name="mapreduce" />
+      <option name="PROGRAM_PARAMETERS" value="d:/input/order.txt d:/output" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gxh.mapjoin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gxh.groupingcomparator.OrderDriver" />
       <module name="mapreduce" />
@@ -355,20 +394,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gxh.writablecomparable.SortDriver" />
-      <module name="mapreduce" />
-      <option name="PROGRAM_PARAMETERS" value="d:/output d:/output2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gxh.writablecomparable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SortDriver2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gxh.writablefcomparable2.SortDriver2" />
       <module name="mapreduce" />
@@ -399,19 +424,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.WcDriver" />
-      <item itemvalue="Application.SortDriver" />
       <item itemvalue="Application.SortDriver2" />
       <item itemvalue="Application.OrderDriver" />
       <item itemvalue="Application.OutputDriver" />
       <item itemvalue="Application.RJDriver" />
+      <item itemvalue="Application.MJDriver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MJDriver" />
         <item itemvalue="Application.RJDriver" />
         <item itemvalue="Application.OutputDriver" />
         <item itemvalue="Application.OrderDriver" />
         <item itemvalue="Application.SortDriver2" />
-        <item itemvalue="Application.SortDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -427,12 +452,12 @@
       <updated>1568100392692</updated>
       <workItem from="1568100398515" duration="39064000" />
       <workItem from="1568609235026" duration="26284000" />
-      <workItem from="1568767958330" duration="3187000" />
+      <workItem from="1568767958330" duration="7627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68535000" />
+    <option name="totallyTimeSpent" value="72975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -447,12 +472,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.04918033" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.05901639" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46885246" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.8540984" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.604918" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.53114754" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -469,6 +494,38 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49827588" visible="true" weight="0.18835099" />
+      <window_info id="Structure" order="1" sideWeight="0.5017241" side_tool="true" weight="0.19440243" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.05901639" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46885246" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.604918" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.53114754" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -478,20 +535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.4/hadoop-mapreduce-client-core-2.6.4-sources.jar!/org/apache/hadoop/mapreduce/InputFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.4/hadoop-mapreduce-client-core-2.6.4-sources.jar!/org/apache/hadoop/mapreduce/lib/chain/Chain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="253" column="22" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.4/hadoop-mapreduce-client-core-2.6.4-sources.jar!/org/apache/hadoop/mapreduce/TaskInputOutputContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -907,28 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/outputformat/OutputDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -961,10 +982,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="315">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/reducejoin/RJComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gxh/mapjoin/MJMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#393#408#0" expanded="true" />
           </folding>
         </state>
       </provider>
